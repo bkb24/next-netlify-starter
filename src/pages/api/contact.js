@@ -13,7 +13,7 @@ const smtpOptions = {
   host: "mailhound.co.uk",
   // port: 25,
 
-  secure: false,
+  // secure: false,
   auth: {
     // user: "dompeyreton@gmail.com",
     // pass: "p4ssw0rd##",
