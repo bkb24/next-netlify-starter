@@ -5,24 +5,24 @@ import { render } from "@react-email/render";
 import ContactEmail from "@/emails/ContactEmail";
 
 const smtpOptions = {
-  // host: "smtp.gmail.com",
-  // port: 465,
+  host: "smtp.gmail.com",
+  port: 465,
   // host: "sandbox.smtp.mailtrap.io",
   // port: 2525,
 
-  host: "mailhound.co.uk",
+  // host: "mailhound.co.uk",
   // port: 25,
 
   // secure: false,
   auth: {
-    // user: "dompeyreton@gmail.com",
-    // pass: "p4ssw0rd##",
+    user: "dompeyreton@gmail.com",
+    pass: "p4ssw0rd##",
 
     // user: "b428ec97876f20",
     // pass: "3f14db7a3b301b",
 
-    user: 'gites@mailhound.co.uk',
-    pass: 'tB30nq?04',
+    // user: 'gites@mailhound.co.uk',
+    // pass: 'tB30nq?04',
   },
 }
 
