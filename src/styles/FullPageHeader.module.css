@@ -1,0 +1,74 @@
+.container {
+    height: 100vh;
+    width: 100%;
+
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.barnLivingArea {
+    background: url('/home_images/barn-living-area.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contentContainer {
+    padding: 2rem;
+    background-color: #c78e38c3;
+    color: #fff;
+    max-width: 700px;
+}
+
+.title {
+    padding-bottom: 5rem;
+}
+
+.button {
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #fff;
+    width: fit-content;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.button:hover {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px 1px;
+}
+
+.button>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainRow {
+    --bs-gutter-x: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .mainRow {
+        --bs-gutter-x: 0;
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,312 @@
+.navigation {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(0, 255, 255, 0) 100%);
+}
+
+@media screen and (min-width: 992px) {
+    .navigation {
+        padding-bottom: 300px;
+    }
+}
+
+.navItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 100%;
+
+}
+
+.imageContainer>div {
+    position: unset !important
+}
+
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+}
+
+.imageLogo {
+    content: url('/logo/logo_white.webp');
+}
+
+.logoMobile {
+    height: 85px;
+    position: absolute;
+    top: 45px;
+    left: 13px;
+}
+
+.logoDesktop {
+    height: 100px;
+    padding-top: 1rem;
+}
+
+.active {
+    color: #fff;
+    text-shadow: 0px 0px 5px #ffffff6a;
+    border-bottom: 3px solid #c78d38;
+}
+
+
+.button {
+    background-color: #c78d38;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 5px #ffffff6a;
+}
+
+
+
+
+.hiddenNav {
+    transition: all 0.3s ease-in-out;
+}
+
+.hideButton {
+    display: none;
+}
+
+.showButton {
+    display: block;
+}
+
+.hide {
+    opacity: 0;
+    height: 0px;
+    animation: slideUp 0.2s ease-out forwards;
+}
+
+.show {
+    opacity: 1;
+    height: 125px;
+    animation: slideDown 0.2s ease-out forwards;
+}
+
+
+@keyframes slideDown {
+    0% {
+        height: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        height: 125px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        height: 125px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+
+
+.mobileMenu {
+    position: absolute;
+    height: fit-content;
+       width: 100%;
+        height: 100vh;
+    top: 0;
+    left: 0;
+  background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s linear;
+    padding:2rem;
+    display:flex;
+}
+
+.navMobileLinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.navMobLink {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom:1rem;
+    border-bottom: 2px solid transparent;
+    font-family: "lato", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navMobLink:last-child {
+    margin-bottom: 0;
+}
+.navMobLink:hover {
+    color: #fff;
+    border-bottom: 2px solid #c78d38;
+}
+.navMobButton {
+    background-color: #c78d38;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navMobButton:hover {
+    background-color: #c78d38;
+    color: #fff;
+}
+
+.hideNav {
+    left: -100%;
+}
+
+.showNav {
+    left: 0%;
+}
+
+
+.toggler {
+    background-color: transparent;
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+        z-index: 9999;
+}
+
+.togglerIcon {
+    background: url('/hamburger.webp');
+    background-size: cover;
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.open {
+    transform-origin: center center;
+    transform: rotate(135deg) !important;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height: 10px !important;
+    left: 0px;
+}
+
+.openDown {
+    transform-origin: center center;
+    transform: rotate(-135deg) !important;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    height: 10px !important;
+}
+
+.closed {
+    transform-origin: center center;
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0px;
+}
+
+.closedDown {
+    transform-origin: center center;
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .navItems {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .toggler {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 620px) {
+    .mobileMenu {
+           width: 100%;
+        height: 100vh;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .mobileMenu {
+        width: 100%;
+        height: 100vh;
+    }
+}

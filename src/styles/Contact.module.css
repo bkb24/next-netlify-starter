@@ -1,0 +1,29 @@
+.container {
+    padding-bottom:2rem;
+}
+
+.formContainer {
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.map {
+    height:auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index:0;
+}
+
+.formWrapper {
+    position:relative;
+    z-index:1;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding:2rem;
+    margin-top:45vh;
+}
+
+
+

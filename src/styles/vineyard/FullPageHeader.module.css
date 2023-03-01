@@ -1,0 +1,57 @@
+.background {
+   /* background: url('/our_gites/lodge-bed-closeup.webp') no-repeat center center;
+    background-size: cover;
+    height: 70vh;*/
+    height: 70vh;
+    width:100%;
+    --bs-gutter-x: 0;
+}
+
+.bgImage {
+    height: 70vh !important;
+    z-index: -1;
+}
+
+.contentContainer {
+    background-color: #fff;
+}
+
+.content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.mainTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.text {
+    max-width:1000px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.75rem;
+}
+
+@media screen and (max-width: 620px) {
+    .background {
+        height: 60vh;
+    }
+
+    .content {
+        padding-top:1rem;
+        display:flex;
+        height: fit-content;
+    }
+    
+}

@@ -1,0 +1,53 @@
+.row {
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+.background{
+    background-color: #f4f4f4;
+}
+
+.taglineContainer {
+    padding:2rem 0;
+}
+
+.imageContainer{
+    padding:2rem 0;
+    padding-right: 2rem;
+}
+
+.tagline {
+    font-size: 3rem;
+    color: #c78d38;
+}
+
+.textContainer {
+    padding-top:2rem;
+    max-width: 500px;
+}
+
+.textContainer h2{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    font-size:1rem;
+    line-height: 1.75rem;
+}
+
+.h3{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    .textContainer {
+        max-width: 100%;
+    }
+}
+

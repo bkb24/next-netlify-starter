@@ -1,0 +1,88 @@
+.row {
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.taglineContainer {
+    padding:2rem 0;
+    padding-right: 2rem;
+}
+
+.tagline {
+    font-size: 3rem;
+    color: #c78d38;
+}
+
+.textContainer {
+    padding-top:2rem;
+    padding-left: 2rem;
+    max-width: 500px;
+}
+
+.text {
+    font-size:1rem;
+    line-height: 1.7rem;
+}
+
+.textContainer h2 {
+    padding-bottom: 1rem;
+}
+
+.calltoaction{
+    display: inline-block;
+    background-color: #c78d38;
+    padding: 1rem;
+    width:auto;
+    color: #FFF;
+    margin-left: 2rem;
+    margin-top:1rem;
+}
+
+.calltoaction a{
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formContainer {
+
+    position:relative;
+}
+
+
+.formWrapper {
+    position:relative;
+    z-index:1;
+    background-color: #f4f4f4;
+    padding:2rem;
+
+}
+
+.formWrapper button[type=submit]{
+    display: block;
+    border-radius: 0;
+    background-color: #c78d38;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:0px;
+    margin-top: 1rem;
+
+
+}
+
+.points{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .textContainer {
+        max-width: 100%;
+    }
+}
+
