@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cypress": "^10.0.3",
     "@next/font": "13.1.5",
     "@popperjs/core": "^2.11.6",
     "@react-email/container": "0.0.7",
